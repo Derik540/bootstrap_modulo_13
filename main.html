@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/cdn.jsdelivr.net_npm_bootstrap@5.3.1_dist_css_bootstrap.min.css">
+    <title>Gourmet Burger Lab</title>
+
+    <style>
+        section {
+            height: 80vh;
+            padding-top: 70px;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #efd400;
+            color: #fff;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+
+        .carousel {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- nesse projeto deve ter:
+     *Carousel de imagens. feito
+     *um layout com grid, na visão desktop deve ter
+      3 itens por linha, no tablet 2 itens por linhas 
+      e no smartphone apena 1 item por linha.
+
+      #######################################
+      Dentro das colunas insira um card, o conteúdo
+      do card a meu critério
+    -->
+
+    <header id="cabecalho">
+        <div class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+            <div class="container">
+                <h1 style="color: azure;">Gourmet Burger Lab</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#inicio">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cardapio">Cardápio</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="inicio">
+
+            <div class="container-sm container-lg">
+                <h2 style="margin: 40px;"> Ofertas😜 </h2>
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/assets/modelo-de-banner-de-fast-food_23-2148609080.avif" class="d-block w-100"
+                                alt="imagens">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/banner-de-venda-de-fast-food-de-design-plano_23-2149165450.avif"
+                                class="d-block w-100" alt="imagens">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/design-de-banner-de-modelo-de-capa-de-facebook-de-menu-de-comida-e-restaurante_624457-2295.avif"
+                                class="d-block w-100" alt="imagens">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section id="cardapio">
+            <div class="container">
+                <h2 style="margin: 40px;">veja nosso Cardápio🍽️</h2>
+                <div class="container-sm justify-content">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-12 mb-4">
+                            <div class="card" style="width:300px">
+                                <img class="card-img-top img-thumbnail w-100 h-100"
+                                    src="assets/hamburger-burger-fast-food.jpg" alt="Card image">
+                                <div class="card-body">
+                                    <h4 class="card-title">Hamburquer vegano</h4>
+                                    <a href="#" class="btn btn-primary">Pedir</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 mb-4">
+                            <div class="card" style="width:300px">
+                                <img class="card-img-top img-thumbnail w-100 h-100"
+                                    src="assets/hamburger-burger-fast-food.jpg" alt="Card image">
+                                <div class="card-body">
+                                    <h4 class="card-title">Hamburquer de carne</h4>
+                                    <a href="#" class="btn btn-primary">Pedir</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 mb-4">
+                            <div class="card" style="width:300px">
+                                <img class="card-img-top img-thumbnail w-100 h-100"
+                                    src="assets/hamburger-burger-fast-food.jpg" alt="Card image">
+                                <div class="card-body">
+                                    <h4 class="card-title">Hamburquer de frango</h4>
+                                    <a href="#" class="btn btn-primary">Pedir</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="/lib/cdn.jsdelivr.net_npm_bootstrap@5.3.1_dist_js_bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
